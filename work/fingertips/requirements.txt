@@ -1,0 +1,9 @@
+slack_sdk 
+slack_bolt
+requests 
+fastapi 
+uvicorn
+slack-bolt==1.18.0
+python-dotenv==1.0.0
+atlassian-python-api==3.41.3   
+simpleaichat

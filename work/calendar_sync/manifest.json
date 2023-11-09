@@ -1,0 +1,28 @@
+{                                                                                                                                                                                       
+    "manifest_version": 2,                                                                                                                                                                
+    "name": "Calendar Sync",                                                                                                                                                              
+    "description": "This extension syncs events between Google Calendar and Office 365.",                                                                                                 
+    "version": "1.0",                                                                                                                                                                     
+    "background": {                                                                                                                                                                       
+    "scripts": ["background.js"],                                                                                                                                                       
+    "persistent": false                                                                                                                                                                 
+    },       
+    "content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",                                                                                                                                                                             
+    "permissions": [                                                                                                                                                                      
+        "identity",                                                                                                                                                                         
+        "https://www.google.com/*",                                                                                                                                                         
+        "https://outlook.office365.com/*"                                                                                                                                                   
+    ],
+    "browser_action": {                                                                                                                                                                   
+       "default_popup": "popup.html"                                                                                                                                                       
+    },
+    "oauth2": {                                                                                                                                                                          
+        "client_id": "752199587016-opvd2gfgbbvirbbpepfoc7hhg3bui451.apps.googleusercontent.com",                                                                                                                                                 
+        "scopes": [                                                                                                                                                                       
+            "https://www.googleapis.com/auth/calendar",                                                                                                                                   
+            "https://www.googleapis.com/auth/calendar.readonly",                                                                                                                         
+            "https://www.googleapis.com/auth/plus.login",                                                                                                                                 
+            "https://www.googleapis.com/auth/userinfo.email"                                                                                                                              
+        ]  
+    }                                                                                                                                                              
+}      
